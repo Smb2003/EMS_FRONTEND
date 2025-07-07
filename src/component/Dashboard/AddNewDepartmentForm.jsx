@@ -37,7 +37,7 @@ const AddNewDepartmentForm = () => {
     }
   return (
     <div className='flex items-center justify-center py-15'>
-        <div className='w-96 p-6 rounded shadow space-y-6 bg-white'>
+        <div className='md:w-96 w-80 p-6 rounded shadow space-y-6 bg-white'>
             <h3 className='text-2xl text-center font-semibold rounded'>Add New Department</h3>
             <div className=''>
                 <form onSubmit={handleSubmitForm}>
@@ -50,7 +50,7 @@ const AddNewDepartmentForm = () => {
                         required={true}
                         value={name}
                         placeholder='Department Name' 
-                        className='flex flex-wrap w-full mt-2 outline-0.4 px-2 py-2 bg-white' 
+                        className='flex flex-wrap w-full mt-2 outline-0.4 border border-gray-400 px-2 py-2 bg-white' 
                         onChange={(e)=>setName(e.target.value)}
                         />
                     </div>

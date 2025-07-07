@@ -56,8 +56,8 @@ const Login = () => {
     }
   return (
     <div className='flex flex-col items-center h-screen justify-center bg-gradient-to-b from-teal-600 from-50%  to-gray-100 to-50% space-y-6'> 
-        <h1 className='font-servillana md:text-3xl text-3xl text-white'>Employee Management System.</h1>
-        <div className='border shadow p-6 w-92 md:80  bg-white'>
+        <h1 className='font-servillana md:text-3xl text-2xl text-white'>Employee Management System.</h1>
+        <div className='border shadow p-6 w-80 md:80  bg-white'>
             <h2 className='text-2xl font-extrabold mb-4'>Login</h2>
             <form onSubmit={handleSubmit}>
                 <div className='mb-4'>

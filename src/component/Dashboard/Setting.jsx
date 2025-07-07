@@ -38,7 +38,7 @@ const Setting = () => {
     }
   return (
     <div className='flex items-center justify-center md:py-15 sm:p-15 py-50 h-cal[100vh-16px]'>
-        <div className='w-96 sm:w-[600px] h-[350px] sm:p-10 p-6 rounded shadow space-y-6 bg-white'>
+        <div className='md:w-96 w-80 sm:w-[600px] h-[350px] sm:p-10 p-6 rounded shadow space-y-6 bg-white'>
             <h3 className='text-2xl text-center font-semibold rounded'>Update Password</h3>
             <div className=''>
                 <form onSubmit={handleSubmitForm}>
@@ -51,7 +51,7 @@ const Setting = () => {
                         required={true}
                         value={password}
                         placeholder='Department Name' 
-                        className='flex flex-wrap w-full mt-2 outline-0.4 px-2 py-2 bg-white' 
+                        className='flex flex-wrap w-full mt-2 border border-gray-400 outline-0.4 px-2 py-2 bg-white' 
                         onChange={(e)=>setPassword(e.target.value)}
                         />
                     </div>
@@ -64,7 +64,7 @@ const Setting = () => {
                         required={true}
                         value={NewPassword}
                         placeholder='Insert New Password' 
-                        className='flex flex-wrap w-full mt-2 outline-0.4 px-2 py-2 bg-white' 
+                        className='flex flex-wrap w-full mt-2 outline-0.4 border border-gray-400 px-2 py-2 bg-white' 
                         onChange={(e)=>setNewPassword(e.target.value)}
                         />
                     </div>

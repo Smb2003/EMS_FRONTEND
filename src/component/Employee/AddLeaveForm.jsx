@@ -43,10 +43,10 @@ const AddLeaveForm = () => {
         !loading?
             <div className='flex flex-col justify-center items-center py-10'>
                 <div className='w-[80%] bg-white p-6'>
-                    <h3 className='md:text-2xl font-semibold mb-3 py-2'>Add Leave</h3>
+                    <h3 className='md:text-2xl text-xl font-semibold mb-3 py-2'>Add Leave</h3>
                     <form onSubmit={submitFormData}>
-                        <div className='mb-3  space-x-5 grid md:grid-cols-2 grid-cols-1'>
-                        <div>
+                        <div className='mb-3 gap-4 grid md:grid-cols-2 grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="leaveType" className='py-2 mb-2 font-semibold'>Leave Type</label>
                             <input 
                             type="text" 

@@ -88,8 +88,8 @@ const EditEmployee = () => {
             <h3 className='text-2xl font-semibold rounded'>Edit Employee</h3>
             <div className=''>
                 <form onSubmit={handleSubmitForm}>
-                    <div className='mb-3 space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Name</label>
                             <input 
                             type="text" 
@@ -118,8 +118,8 @@ const EditEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Employee ID</label>
                             <input 
                             type="text" 
@@ -147,8 +147,8 @@ const EditEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Gender</label>
                             <select id="gender" name='gender' disabled className='block w-full border border-gray-400 rounded mt-2 outline-0.4 px-2 py-2 bg-white' onChange={handleFormData} required={true} >
                                 <option value="Male"  >{empData && empData.gender}</option>
@@ -165,8 +165,8 @@ const EditEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Designation</label>
                             <input 
                             type="text" 
@@ -196,8 +196,8 @@ const EditEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Salary</label>
                             <input 
                             type="text" 
@@ -226,8 +226,8 @@ const EditEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Role</label>
                              <select id="role"  disabled name="role" className='block w-full mt-2 outline-0.4 rounded border border-gray-400 px-2 py-2 bg-white' onChange={handleFormData}>
                                 <option value="" >{empData?.employee[0].role}</option>

@@ -66,8 +66,8 @@ const AddEmployee = () => {
             <h3 className='text-2xl font-semibold rounded'>Add New Employee</h3>
             <div className=''>
                 <form onSubmit={handleSubmitForm}>
-                    <div className='mb-3 space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Name <span className='text-red-600'>*</span></label>
                             <input 
                             type="text" 
@@ -94,8 +94,8 @@ const AddEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3  gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Employee ID <span className='text-red-600'>*</span></label>
                             <input 
                             type="text" 
@@ -121,8 +121,8 @@ const AddEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Gender <span className='text-red-600'>*</span></label>
                             <select id="gender" name='gender' className='block w-full border border-gray-400 rounded mt-2 outline-0.4 px-2 py-2 bg-white' onChange={handleFormData} required={true}>
                                 <option value="">Select Gender</option>
@@ -142,8 +142,8 @@ const AddEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Designation <span className='text-red-600'>*</span></label>
                             <input 
                             type="text" 
@@ -171,8 +171,8 @@ const AddEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Salary</label>
                             <input 
                             type="text" 
@@ -198,8 +198,8 @@ const AddEmployee = () => {
 
                         </div>
                     </div>
-                    <div className='mb-3  space-x-5 grid md:grid-cols-2  grid-cols-1'>
-                        <div>
+                    <div className='mb-3 gap-4 grid md:grid-cols-2  grid-cols-1'>
+                        <div className='w-full'>
                             <label htmlFor="name" className='py-2 mb-2 font-semibold'>Role <span className='text-red-600'>*</span></label>
                              <select id="role" name="role" className='block w-full mt-2 outline-0.4 rounded border border-gray-400 px-2 py-2 bg-white' onChange={handleFormData}>
                                 <option value="">Select Role</option>
