@@ -17,7 +17,7 @@ const [issuedLeave, setIssuedLeave] = useState([]);
 const [rejectedLeave, setRejectedLeave] = useState([]);
 const [salary, setSalary] = useState(0);
 useEffect(() => {
-  axios.get("http://localhost:8080/api/v1/users/department_get", {
+  axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/department_get", {
     withCredentials: true
   })
   .then(res => {
@@ -32,7 +32,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  axios.get("http://localhost:8080/api/v1/users/employee_get", {
+  axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/employee_get", {
     withCredentials: true
   })
   .then(res => {
@@ -47,7 +47,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  axios.get("http://localhost:8080/api/v1/users/leave_get", {
+  axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/leave_get", {
     withCredentials: true
   })
   .then(res => {
@@ -69,7 +69,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  axios.get("http://localhost:8080/api/v1/users/salary_allGet", {
+  axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/salary_allGet", {
     withCredentials: true
   })
   .then(res => {

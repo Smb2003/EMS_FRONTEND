@@ -48,7 +48,7 @@ export const LeaveDataActions = ({leaveID}) => {
         e.preventDefault();
         const status= e.target.value;
         try {
-            const response = await axios.put("http://localhost:8080/api/v1/users/leave_update", {leaveID,status},{
+            const response = await axios.put("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/leave_update", {leaveID,status},{
                 withCredentials: true,
             })
             if(response?.data?.statusCode === 200){

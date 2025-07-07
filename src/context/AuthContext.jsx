@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const logout = async () => {
-    return axios.get("http://localhost:8080/api/v1/users/logOut", {
+    return axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/logOut", {
       withCredentials: true
     }).then(() => {
       setUser(null);
@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
     setEmployees([...employees, ...data])
   }
   useEffect(() => {
-    axios.get("http://localhost:8080/api/v1/users/check", {
+    axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/check", {
       withCredentials: true
     })
     .then((res) => {

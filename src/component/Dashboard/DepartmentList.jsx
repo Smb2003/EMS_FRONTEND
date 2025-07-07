@@ -29,7 +29,7 @@ const makingData = (data) => {
 useEffect(() => {
   const fetchDepartments = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/v1/users/department_get", {
+      const response = await axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/department_get", {
         withCredentials: true
       });
 
