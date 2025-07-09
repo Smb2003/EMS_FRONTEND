@@ -80,6 +80,8 @@ export const EmployeeActions = ({id,setRefresh}) => {
     
     const handleDeleteBtn = async (e) => {
         e.preventDefault();
+        console.log(id);
+        
         try {
             const response = await axios.delete(`https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/employee_delete/${id}`,{
                 withCredentials: true
