@@ -10,7 +10,7 @@ const AddEmployee = () => {
     const [depResult,setDepResult] = useState(null);
     const [loading,setLoading] = useState(false);
     const [redirect,setRedirect] = useState(false);
-
+    console.log(depResult);
     const navigate = useNavigate();
     // const {addEmployees} = getAuth();
     const handleFormData = (e) => {
