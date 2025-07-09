@@ -42,7 +42,7 @@ export const columns = [
     
 ]
 
-export const LeaveDataActions = ({leaveID}) => {
+export const LeaveDataActions = ({leaveID,setRefresh}) => {
     console.log(leaveID)
     const handleClick = async (e) => {
         e.preventDefault();
@@ -51,9 +51,10 @@ export const LeaveDataActions = ({leaveID}) => {
             const response = await axios.put("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/leave_update", {leaveID,status},{
                 withCredentials: true,
             })
+            console.log(response);
             if(response?.data?.statusCode === 200){
                 console.log("Leave updated successfully");
-                window.location.reload();
+                setRefresh(prev => !prev);
             } else {
                 console.log("Failed to update leave: ", response?.data?.message);
             }

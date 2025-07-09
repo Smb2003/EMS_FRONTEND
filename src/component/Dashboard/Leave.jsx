@@ -7,13 +7,14 @@ import { columns, LeaveDataActions} from '../../utils/AdminLeaveHelper';
 const Leave= () => {
     const [loading, setLoading] = useState(false);
     const [leaveData, setLeaveData] = useState([]);
+    const [refresh,setRefresh] = useState(false);
     const updateLeaveData = (newData) => {
         // console.log(newData);
         const data = newData.map((item, index) => {
             console.log(item)
             return {
                 ...item,
-                actions: <LeaveDataActions leaveID={item?._id}/>,
+                actions: <LeaveDataActions leaveID={item?._id} setRefresh={setRefresh}/>,
             }
         }).filter(item => item?.status !== "Rejected");
         setLeaveData(data);
@@ -37,7 +38,6 @@ const Leave= () => {
                                 name: userName
                             }));
                         });
-                        console.log(result);
                         updateLeaveData(result);
                 }
             } catch (error) {
@@ -55,8 +55,7 @@ const Leave= () => {
             console.log("unmounting");
             clearInterval(timer);
         }
-    },[])
-    // console.log(leaveData)
+    },[refresh]);
   return (
     <>
     {
