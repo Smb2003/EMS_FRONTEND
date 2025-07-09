@@ -61,10 +61,11 @@ const List = () => {
     fetch();
     },5000);
     
-      return ()=>{
-        console.log("unmounting");
-        clearInterval(timer);
+    return ()=>{
+    console.log("unmounting");
+    clearInterval(timer);
     }
+
     }, [refresh,searchedDep])
     console.log(empData)
     return (
@@ -78,7 +79,7 @@ const List = () => {
                         </div>
                         <div className='mt-5 px-3 '>
                             {
-                                !refresh? 
+                                 empData.length > 0 ? 
                                     <div className='flex flex-wrap md:w-[calc(100vw-350px)] w-full overflow-x-auto '>
                                         <DataTable
                                         className='h-full'
