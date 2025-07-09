@@ -32,7 +32,7 @@ const SearchBar = ({setIsSearchedDep,setSearchedDep,setLoading,label,inputLabel}
             value={depName}
             placeholder={inputLabel}
             autoComplete='off'
-            className='py-2 px-2 h-14 rounded shadow-lg w-30 sm:w-58 md:w-68 bg-white'
+            className='py-2 px-2 h-14 md:h-20 sm:h-20 rounded shadow-lg w-30 sm:w-58 md:w-68 bg-white'
             onChange={handleChange}
             />
             <button className='border bg-teal-600 shadow text-white hover:bg-teal-700 cursor-pointer px-2 rounded' onClick={NaviagteToAddNewDepartmentForm}>{label}</button>
