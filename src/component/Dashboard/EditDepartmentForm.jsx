@@ -11,10 +11,7 @@ const EditDepartmentForm = () => {
     const navigate = useNavigate();
     const {department} = getAuth();
     const {id} = useParams();
-    console.log(id);
-    console.log(singleUser);
     
-    // const {addDepartment} = getAuth();
     const handleSubmitForm = async (e) => {
         e.preventDefault();
         try {
@@ -44,7 +41,6 @@ const EditDepartmentForm = () => {
     }
     useEffect(()=>{
         const user = department?.find(item => item._id == id);
-        console.log(department);
         
         if(!user){
             setSingleUser(null);

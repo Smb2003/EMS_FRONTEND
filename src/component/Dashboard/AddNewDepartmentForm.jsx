@@ -7,7 +7,6 @@ const AddNewDepartmentForm = () => {
     const [description,setDescription] = useState("");
     const [error,setError] = useState("");
     const navigate = useNavigate();
-    // const {addDepartment} = getAuth();
     const handleSubmitForm = async (e) => {
         e.preventDefault();
         try {
@@ -18,7 +17,6 @@ const AddNewDepartmentForm = () => {
                 withCredentials: true
             });
             if(response?.data?.statusCode === 200){
-                // addDepartment(response?.data?.data);
                 setName("");
                 setDescription("");
                 navigate("/admin_dashboard/departmentList");

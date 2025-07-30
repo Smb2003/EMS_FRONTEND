@@ -8,11 +8,9 @@ import "../../App.css"
 const DepartmentList = () => {
 const [loading,setLoading] = useState(false);
 const [dep_Data,setDep_Data] = useState([]);
-// const [issearchedDep, setIsSearchedDep] = useState(false);
 const [searchedDep, setSearchedDep] = useState("");
 const [refresh, setRefresh] = useState(false);
 const {department,addDepartment} =  getAuth();
-console.log(department);
 
 const makingData = (data) => {
   const result = data?.map((item,index)=>{

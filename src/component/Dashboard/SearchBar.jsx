@@ -18,7 +18,6 @@ const SearchBar = ({setIsSearchedDep,setSearchedDep,setLoading,label,inputLabel}
     const handleChange = (e) => {
         const name = e.target.value;
         setDepName(name);
-        console.log(depName)
         setSearchedDep(name);
         setIsSearchedDep(false);
         setLoading(false);

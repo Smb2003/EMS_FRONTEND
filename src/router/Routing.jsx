@@ -19,8 +19,7 @@ import EmployeeSummary from '../component/Employee/EmployeeSummary';
 import LeaveManagement from '../component/Employee/LeaveManagement';
 import AddLeaveForm from '../component/Employee/AddLeaveForm';
 import Setting from '../component/Dashboard/Setting';
-import Leave from '../component/Dashboard/Leave';
-// import ResizableContainers from '../component/Salary/Resizeable';  
+import Leave from '../component/Dashboard/Leave'; 
 
 const router = createBrowserRouter(
   createRoutesFromElements(

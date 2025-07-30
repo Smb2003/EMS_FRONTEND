@@ -5,7 +5,6 @@ import logo from "../../assets/logo.png";
 const EmployeeSummary = () => {
     const [employee, setEmployee] = useState({});
     const{user} = getAuth();
-    // console.log(user);
     
     useEffect(() => {
         (async ()=>{
@@ -16,7 +15,6 @@ const EmployeeSummary = () => {
                 let data = res?.data?.data;
                 const filterUser = data?.filter(emp => emp?.userID === user?._id);
                 data = filterUser[0];
-                console.log("emp",data);
                 if (data) {
                 setEmployee(data);
                 }

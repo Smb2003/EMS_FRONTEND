@@ -10,12 +10,9 @@ const List = () => {
     const [searchedDep, setSearchedDep] = useState("");
     const [empData,setEmpData] = useState([]);
     const [refresh, setRefresh] = useState(false);
-    console.log(searchedDep);
     
     const updateData = (data) =>{
-        console.log(data);
         const result = data?.map((item,index)=>{
-            
             return(
                 {
                     ...item,
@@ -67,7 +64,6 @@ const List = () => {
     }
 
     }, [refresh,searchedDep])
-    console.log(empData)
     return (
         <>
             {

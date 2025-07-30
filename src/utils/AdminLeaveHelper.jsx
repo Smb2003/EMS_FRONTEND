@@ -43,7 +43,6 @@ export const columns = [
 ]
 
 export const LeaveDataActions = ({leaveID,setRefresh}) => {
-    console.log(leaveID)
     const handleClick = async (e) => {
         e.preventDefault();
         const status= e.target.value;

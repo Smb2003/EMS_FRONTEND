@@ -22,12 +22,10 @@ export const columns = [
     {
         name: "DATE OF BIRTH",
         selector: row => row.dob,
-        // hide: "lg"
     },
     {
         name: "MARTIAL STATUS",
         selector: row => row.martialStatus.toUpperCase(),
-        // hide:"lg"
     },
      {
         name: "SALARY",
@@ -80,7 +78,6 @@ export const EmployeeActions = ({id,setRefresh}) => {
     
     const handleDeleteBtn = async (e) => {
         e.preventDefault();
-        console.log(id);
         
         try {
             const response = await axios.delete(`https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/employee_delete/${id}`,{
@@ -99,8 +96,6 @@ export const EmployeeActions = ({id,setRefresh}) => {
             <button className="px-2 py-2 bg-green-500 text-white rounded cursor-pointer focus:scale-95 hover:bg-green-600" onClick={()=>{navigate(`/admin_dashboard/employee/edit_Employee/${id}`)}}>Edit</button>
             <button className="px-2 py-2 bg-yellow-500 text-white rounded cursor-pointer focus:scale-95 hover:bg-yellow-600" onClick={()=>{navigate(`/admin_dashboard/salary/${id}`)}}>Salary</button>
             <button className="px-2 py-2 bg-red-500 text-white rounded cursor-pointer focus:scale-95 hover:bg-red-600" onClick={handleDeleteBtn}>Delete</button>
-            {/* <button></button> */}
-
         </div>
     )
 }

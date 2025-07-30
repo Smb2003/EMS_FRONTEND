@@ -15,7 +15,6 @@ const Sidebar = () => {
      if(user){
         setEmp(user);
     }
-    console.log(emp);
    },[])
     const links = [
         {

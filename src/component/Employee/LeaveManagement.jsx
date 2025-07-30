@@ -18,16 +18,13 @@ const LeaveManagement = () => {
                     withCredentials: true,
                 });
                 const data = response?.data?.data[0]?.Employee || [];
-                console.log(data);
                 
                 if(response?.data?.statusCode == 200){
                     if(searchedDep == null || searchedDep != ""){
-                        console.log(data);
                         const result = data?.filter((item, index) => {
                             return item?.status?.toUpperCase()?.includes(searchedDep?.toUpperCase());
                         })
 
-                        console.log(result);
                         setLeaveData(result);
                     }else{
                         setLeaveData(data); 

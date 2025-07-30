@@ -14,8 +14,6 @@ const EditEmployee = () => {
 
     const navigate = useNavigate();
     const {id} = useParams();
-    console.log(navigate);
-    console.log(redirect);
     
     const handleFormData = (e) => {
         const {name,value,files} = e.target;
@@ -47,7 +45,6 @@ const EditEmployee = () => {
             const response = await axios.put(`https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/employee_edit/${id}`,formData,{
                 withCredentials: true
             })
-            console.log(response?.data);
             if(response?.data?.statusCode == 200){
                 setRedirect(true);
             }  

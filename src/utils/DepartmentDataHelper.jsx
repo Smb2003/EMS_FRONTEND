@@ -28,9 +28,7 @@ export const DepartmentActions = ({id,setRefresh}) =>{
             const response = await axios.delete(`https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/department_delete/${id}`,{
                 withCredentials: true
             });
-            console.log(response.data.data);
             setRefresh(prev => !prev);
-            // navigate('/admin_dashboard/departmentList')
         } catch (error) {
             console.log("error: ",error);
         }

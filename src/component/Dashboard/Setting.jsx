@@ -15,7 +15,6 @@ const Setting = () => {
             },{
                 withCredentials: true
             });
-            console.log("Password ",response);
 
             if(response?.data?.statusCode === 200){
                 setPassword("");

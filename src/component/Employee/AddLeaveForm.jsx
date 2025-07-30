@@ -16,12 +16,10 @@ const AddLeaveForm = () => {
     }
     const submitFormData = async (e) => {
         e.preventDefault();
-        console.log(form) 
         try {
             const response = await axios.post("https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/leave_add",form,{
                 withCredentials: true
             });
-            console.log(response?.data?.data);
             if(response?.data?.statusCode == 200){
                 setRedirect(true)
             }

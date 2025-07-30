@@ -9,7 +9,6 @@ const Leave= () => {
     const [leaveData, setLeaveData] = useState([]);
     const [refresh,setRefresh] = useState(false);
     const updateLeaveData = (newData) => {
-        // console.log(newData);
         const data = newData.map((item, index) => {
             console.log(item)
             return {

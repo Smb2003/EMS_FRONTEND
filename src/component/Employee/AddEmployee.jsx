@@ -12,7 +12,6 @@ const AddEmployee = () => {
     const [redirect,setRedirect] = useState(false);
     console.log(depResult);
     const navigate = useNavigate();
-    // const {addEmployees} = getAuth();
     const handleFormData = (e) => {
         const {name,value,files} = e.target;
         if(name == "image"){
@@ -24,7 +23,6 @@ const AddEmployee = () => {
     } 
     const handleSubmitForm = async (e) => {
         e.preventDefault();
-        console.log("data", empData);
         const formData = new FormData();
         Object.keys(empData).forEach((key)=>{
             formData.append(key, empData[key])
@@ -36,7 +34,6 @@ const AddEmployee = () => {
             })
 
             if(response?.data?.statusCode == 200){
-                // setLoading(true);
                 setRedirect(true);
                 
             }  

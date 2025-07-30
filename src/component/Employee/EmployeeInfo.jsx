@@ -16,7 +16,6 @@ const EmployeeInfo = () => {
                 
                 if(response?.data?.statusCode == 200){
                     const result = response?.data?.data;
-                    console.log(result);
                     
                     const exactuserData = result?.filter(item=> (item._id == id || item?.userID == id));
                     setuser(...exactuserData);

@@ -15,7 +15,6 @@ const SalarIyInfo = () => {
                 const response = await axios.get(`https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/salary_get/${id}`,{
                     withCredentials: true
                 });
-                console.log(response?.data?.data);
                 if(response?.data?.statusCode == 200){
                     setData(response?.data?.data)
                 }
@@ -32,7 +31,6 @@ const SalarIyInfo = () => {
     useEffect(()=>{
 
     },[])
-    console.log(data)
   return (
     <div className='md:py-15 md:px-2 py-20'>
         <h3 className='px-3 font-semibold md:text-2xl text-3xl'>Salary Summary</h3>

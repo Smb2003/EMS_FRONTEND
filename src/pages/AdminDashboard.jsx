@@ -8,8 +8,6 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
   const { user, logout } = getAuth();
 
-  console.log(user);
-
   useEffect(() => {
     if (!user) {
       navigate("/login");
