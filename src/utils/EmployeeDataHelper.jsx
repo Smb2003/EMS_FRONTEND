@@ -49,7 +49,7 @@ export const columns = [
 
 export const fetchDepartments = async () => {
     try {
-        const response = await axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/department_get", {
+        const response = await axios.get("https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/department_get", {
             withCredentials: true
         });
         if(response?.data?.statusCode == 200){
@@ -63,7 +63,7 @@ export const fetchDepartments = async () => {
 
 export const fetchEmployees = async () => {
     try {
-        const response = await axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/employee_get", {
+        const response = await axios.get("https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/employee_get", {
             withCredentials: true
         });
         if(response?.data?.statusCode == 200){
@@ -83,7 +83,7 @@ export const EmployeeActions = ({id,setRefresh}) => {
         console.log(id);
         
         try {
-            const response = await axios.delete(`https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/employee_delete/${id}`,{
+            const response = await axios.delete(`https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/employee_delete/${id}`,{
                 withCredentials: true
             });
             if(response?.data?.statusCode == 200){

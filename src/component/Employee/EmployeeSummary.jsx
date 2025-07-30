@@ -9,7 +9,7 @@ const EmployeeSummary = () => {
     
     useEffect(() => {
         (async ()=>{
-            await axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/employee_get", {
+            await axios.get("https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/employee_get", {
             withCredentials: true
             })
             .then(res => {

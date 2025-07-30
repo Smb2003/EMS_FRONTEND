@@ -8,7 +8,7 @@ const ProtectedRoutes = () => {
     const [auth,setAuth] = useState(null);
 
    useEffect(() => {
-    axios.get("https://4bc4f03e-6724-4328-9524-a9a1108eeb02-00-2lbhj86on536i.pike.replit.dev/api/v1/users/check", {
+    axios.get("https://employeemanagementsystem-backend-iota.vercel.app/api/v1/users/check", {
         withCredentials: true
       })
       .then((res) =>{
